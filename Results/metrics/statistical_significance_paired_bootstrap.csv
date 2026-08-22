@@ -1,0 +1,7 @@
+task,component,delta_f1_mean,ci_95_lo,ci_95_hi,p_value,significant_at_0.05
+human,w/o E-REM,0.0116,-0.0003,0.0236,0.058,False
+human,w/o UASG,0.1661,0.1411,0.1913,0.0,True
+human,w/o UG-CMA,0.206,0.182,0.2304,0.0,True
+damage,w/o E-REM,0.0065,-0.0014,0.0148,0.119,False
+damage,w/o UASG,0.0109,0.0024,0.0197,0.013,True
+damage,w/o UG-CMA,0.0677,0.0521,0.0841,0.0,True

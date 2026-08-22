@@ -1,0 +1,4 @@
+method,average_drop_pct
+gradcam,14.53
+gradcam++,11.77
+eigencam,14.85

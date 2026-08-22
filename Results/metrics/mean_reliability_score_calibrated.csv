@@ -1,0 +1,5 @@
+metric,value,ci_95_lo,ci_95_hi
+Fitted_Temperature_Text_T_t,0.01,,
+Fitted_Temperature_Image_T_v,0.884,,
+Mean_Reliability_Raw_Uncalibrated,0.1905,0.1844,0.1966
+Mean_Reliability_Temperature_Calibrated,0.1601,0.1582,0.1622

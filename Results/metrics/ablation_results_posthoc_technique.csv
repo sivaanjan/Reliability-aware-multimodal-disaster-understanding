@@ -1,0 +1,8 @@
+Configuration,avg_wF1,event_wF1,info_wF1,human_wF1,damage_wF1
+"Full Model (Ours, deployed config)",0.8503,0.9822,0.8359,0.7093,0.8737
+Full - no calibration,0.8508,0.9822,0.8359,0.7114,0.8735
+Full - no TTA,0.8501,0.9828,0.8345,0.7087,0.8746
+Full - no calib/TTA,0.8501,0.9828,0.8345,0.71,0.8732
+Full - no text cleaning,0.8402,0.9736,0.8249,0.689,0.8733
+"Full + gating (unconditional, NOT recommended)",0.7723,0.9008,0.8359,0.4842,0.8682
+Full + gating (confidence >= 0.95),0.8137,0.948,0.8359,0.6011,0.8699

@@ -1,0 +1,152 @@
+
+==============================================================================
+  TRAINING INDEPENDENT BASELINE: B0_Conventional_Fusion
+==============================================================================
+  Train: 14,465  Dev: 1,808  Test: 1,809  (same split as Notebook 1)
+  Parameters: 274,741,650 total | 274,741,650 trainable
+  Epoch 01/15 | train_loss=5.7133 | dev_loss=4.9676 | dev_avg_F1=0.5491 | dev_target_F1(human+damage)=0.3419 | 216.8s
+  Epoch 02/15 | train_loss=3.2405 | dev_loss=4.0230 | dev_avg_F1=0.6668 | dev_target_F1(human+damage)=0.5607 | 220.5s
+  Epoch 03/15 | train_loss=1.7369 | dev_loss=3.2349 | dev_avg_F1=0.7443 | dev_target_F1(human+damage)=0.6779 | 221.4s
+  Epoch 04/15 | train_loss=1.2123 | dev_loss=2.8681 | dev_avg_F1=0.7724 | dev_target_F1(human+damage)=0.7129 | 220.7s
+  Epoch 05/15 | train_loss=0.9065 | dev_loss=2.9963 | dev_avg_F1=0.7970 | dev_target_F1(human+damage)=0.7312 | 221.4s
+  Epoch 06/15 | train_loss=0.7711 | dev_loss=2.8117 | dev_avg_F1=0.7992 | dev_target_F1(human+damage)=0.7395 | 221.2s
+  Epoch 07/15 | train_loss=0.6465 | dev_loss=2.8376 | dev_avg_F1=0.8216 | dev_target_F1(human+damage)=0.7630 | 221.0s
+  Epoch 08/15 | train_loss=0.5886 | dev_loss=3.1908 | dev_avg_F1=0.8146 | dev_target_F1(human+damage)=0.7410 | 221.3s
+  Epoch 09/15 | train_loss=0.5347 | dev_loss=3.0809 | dev_avg_F1=0.8082 | dev_target_F1(human+damage)=0.7411 | 221.0s
+  Epoch 10/15 | train_loss=0.4873 | dev_loss=2.9738 | dev_avg_F1=0.8215 | dev_target_F1(human+damage)=0.7588 | 220.5s
+  Epoch 11/15 | train_loss=0.4607 | dev_loss=3.0556 | dev_avg_F1=0.8262 | dev_target_F1(human+damage)=0.7577 | 220.9s
+  Epoch 12/15 | train_loss=0.4191 | dev_loss=3.4235 | dev_avg_F1=0.8144 | dev_target_F1(human+damage)=0.7498 | 220.8s
+  Early stopping (no improvement for 5 epochs). Best epoch: 7
+  ✅ Saved checkpoint -> results/checkpoints/b0_conventional_fusion.pt
+  ✅ B0_Conventional_Fusion test-set weighted-F1 by task:
+      event   : 0.9650
+      info    : 0.8190
+      human   : 0.6675
+      damage  : 0.8545
+      verif   : 0.7499
+  🧹 Memory cleared after B0_Conventional_Fusion.
+
+==============================================================================
+  TRAINING INDEPENDENT BASELINE: B1_Vanilla_EDL
+==============================================================================
+  Train: 14,465  Dev: 1,808  Test: 1,809  (same split as Notebook 1)
+  Parameters: 275,136,406 total | 275,136,406 trainable
+  Epoch 01/15 | train_loss=4.6922 | dev_loss=5.1876 | dev_avg_F1=0.6286 | dev_target_F1(human+damage)=0.4832 | 224.9s
+  Epoch 02/15 | train_loss=1.7591 | dev_loss=4.5661 | dev_avg_F1=0.7119 | dev_target_F1(human+damage)=0.6400 | 222.3s
+  Epoch 03/15 | train_loss=1.1271 | dev_loss=4.1958 | dev_avg_F1=0.7738 | dev_target_F1(human+damage)=0.7096 | 222.7s
+  Epoch 04/15 | train_loss=0.9113 | dev_loss=3.9685 | dev_avg_F1=0.7805 | dev_target_F1(human+damage)=0.7157 | 222.9s
+  Epoch 05/15 | train_loss=0.7871 | dev_loss=3.6689 | dev_avg_F1=0.8027 | dev_target_F1(human+damage)=0.7297 | 222.3s
+  Epoch 06/15 | train_loss=0.7120 | dev_loss=3.7835 | dev_avg_F1=0.8180 | dev_target_F1(human+damage)=0.7569 | 222.5s
+  Epoch 07/15 | train_loss=0.6327 | dev_loss=3.6932 | dev_avg_F1=0.8181 | dev_target_F1(human+damage)=0.7584 | 222.8s
+  Epoch 08/15 | train_loss=0.5708 | dev_loss=3.7479 | dev_avg_F1=0.8181 | dev_target_F1(human+damage)=0.7611 | 222.6s
+  Epoch 09/15 | train_loss=0.5683 | dev_loss=3.8548 | dev_avg_F1=0.8223 | dev_target_F1(human+damage)=0.7574 | 222.4s
+  Epoch 10/15 | train_loss=0.5449 | dev_loss=3.9442 | dev_avg_F1=0.8249 | dev_target_F1(human+damage)=0.7619 | 222.4s
+  Epoch 11/15 | train_loss=0.5151 | dev_loss=3.8572 | dev_avg_F1=0.8292 | dev_target_F1(human+damage)=0.7700 | 222.3s
+  Epoch 12/15 | train_loss=0.5109 | dev_loss=3.8629 | dev_avg_F1=0.8236 | dev_target_F1(human+damage)=0.7613 | 222.9s
+  Epoch 13/15 | train_loss=0.4763 | dev_loss=3.9643 | dev_avg_F1=0.8305 | dev_target_F1(human+damage)=0.7694 | 222.2s
+  Epoch 14/15 | train_loss=0.4495 | dev_loss=3.9221 | dev_avg_F1=0.8359 | dev_target_F1(human+damage)=0.7789 | 222.5s
+  Epoch 15/15 | train_loss=0.4284 | dev_loss=4.2844 | dev_avg_F1=0.8245 | dev_target_F1(human+damage)=0.7713 | 222.4s
+  ✅ Saved checkpoint -> results/checkpoints/b1_vanilla_edl.pt
+  ✅ B1_Vanilla_EDL test-set weighted-F1 by task:
+      event   : 0.9743
+      info    : 0.8392
+      human   : 0.7101
+      damage  : 0.8717
+      verif   : 0.7741
+  🧹 Memory cleared after B1_Vanilla_EDL.
+
+==============================================================================
+  TRAINING INDEPENDENT BASELINE: B2_EDL_UASG
+==============================================================================
+  Train: 14,465  Dev: 1,808  Test: 1,809  (same split as Notebook 1)
+  Parameters: 275,582,232 total | 275,582,232 trainable
+  Epoch 01/15 | train_loss=4.0043 | dev_loss=4.6651 | dev_avg_F1=0.6731 | dev_target_F1(human+damage)=0.6182 | 223.5s
+  Epoch 02/15 | train_loss=1.1140 | dev_loss=5.0111 | dev_avg_F1=0.7391 | dev_target_F1(human+damage)=0.6831 | 223.5s
+  Epoch 03/15 | train_loss=0.7477 | dev_loss=4.2363 | dev_avg_F1=0.7815 | dev_target_F1(human+damage)=0.7297 | 223.8s
+  Epoch 04/15 | train_loss=0.6298 | dev_loss=4.4476 | dev_avg_F1=0.7952 | dev_target_F1(human+damage)=0.7319 | 223.4s
+  Epoch 05/15 | train_loss=0.5848 | dev_loss=3.9647 | dev_avg_F1=0.8074 | dev_target_F1(human+damage)=0.7550 | 223.2s
+  Epoch 06/15 | train_loss=0.5306 | dev_loss=4.3879 | dev_avg_F1=0.8147 | dev_target_F1(human+damage)=0.7517 | 223.1s
+  Epoch 07/15 | train_loss=0.5225 | dev_loss=4.1457 | dev_avg_F1=0.8204 | dev_target_F1(human+damage)=0.7645 | 223.2s
+  Epoch 08/15 | train_loss=0.4906 | dev_loss=4.2226 | dev_avg_F1=0.8197 | dev_target_F1(human+damage)=0.7637 | 222.9s
+  Epoch 09/15 | train_loss=0.4701 | dev_loss=4.0326 | dev_avg_F1=0.8228 | dev_target_F1(human+damage)=0.7685 | 223.3s
+  Epoch 10/15 | train_loss=0.4548 | dev_loss=4.2401 | dev_avg_F1=0.8203 | dev_target_F1(human+damage)=0.7594 | 222.9s
+  Epoch 11/15 | train_loss=0.4359 | dev_loss=4.1813 | dev_avg_F1=0.8202 | dev_target_F1(human+damage)=0.7653 | 222.7s
+  Epoch 12/15 | train_loss=0.4292 | dev_loss=4.6130 | dev_avg_F1=0.8156 | dev_target_F1(human+damage)=0.7581 | 222.8s
+  Epoch 13/15 | train_loss=0.3979 | dev_loss=4.4436 | dev_avg_F1=0.8215 | dev_target_F1(human+damage)=0.7647 | 222.5s
+  Epoch 14/15 | train_loss=0.3871 | dev_loss=4.4098 | dev_avg_F1=0.8279 | dev_target_F1(human+damage)=0.7722 | 222.7s
+  Epoch 15/15 | train_loss=0.3688 | dev_loss=4.9319 | dev_avg_F1=0.8188 | dev_target_F1(human+damage)=0.7604 | 222.7s
+  ✅ Saved checkpoint -> results/checkpoints/b2_edl_uasg.pt
+  ✅ B2_EDL_UASG test-set weighted-F1 by task:
+      event   : 0.9803
+      info    : 0.8110
+      human   : 0.6636
+      damage  : 0.8739
+      verif   : 0.7537
+  🧹 Memory cleared after B2_EDL_UASG.
+
+==============================================================================
+  TRAINING INDEPENDENT BASELINE: B3_EREM_UASG
+==============================================================================
+  Train: 14,465  Dev: 1,808  Test: 1,809  (same split as Notebook 1)
+  Parameters: 276,781,728 total | 276,781,728 trainable
+  Epoch 01/15 | train_loss=3.7099 | dev_loss=5.0121 | dev_avg_F1=0.6897 | dev_target_F1(human+damage)=0.6271 | 225.9s
+  Epoch 02/15 | train_loss=0.7895 | dev_loss=5.4126 | dev_avg_F1=0.7297 | dev_target_F1(human+damage)=0.6776 | 225.5s
+  Epoch 03/15 | train_loss=0.5397 | dev_loss=5.1382 | dev_avg_F1=0.7819 | dev_target_F1(human+damage)=0.7231 | 225.4s
+  Epoch 04/15 | train_loss=0.4582 | dev_loss=4.4931 | dev_avg_F1=0.7955 | dev_target_F1(human+damage)=0.7320 | 225.2s
+  Epoch 05/15 | train_loss=0.4201 | dev_loss=4.9339 | dev_avg_F1=0.7958 | dev_target_F1(human+damage)=0.7411 | 225.0s
+  Epoch 06/15 | train_loss=0.3946 | dev_loss=4.7827 | dev_avg_F1=0.8086 | dev_target_F1(human+damage)=0.7486 | 225.4s
+  Epoch 07/15 | train_loss=0.3752 | dev_loss=4.3526 | dev_avg_F1=0.8011 | dev_target_F1(human+damage)=0.7409 | 225.3s
+  Epoch 08/15 | train_loss=0.3419 | dev_loss=4.7815 | dev_avg_F1=0.8072 | dev_target_F1(human+damage)=0.7520 | 225.3s
+  Epoch 09/15 | train_loss=0.3463 | dev_loss=5.2177 | dev_avg_F1=0.8022 | dev_target_F1(human+damage)=0.7447 | 225.3s
+  Epoch 10/15 | train_loss=0.3193 | dev_loss=4.8683 | dev_avg_F1=0.8165 | dev_target_F1(human+damage)=0.7621 | 225.3s
+  Epoch 11/15 | train_loss=0.3004 | dev_loss=4.7390 | dev_avg_F1=0.8168 | dev_target_F1(human+damage)=0.7649 | 225.2s
+  Epoch 12/15 | train_loss=0.2997 | dev_loss=5.2957 | dev_avg_F1=0.8177 | dev_target_F1(human+damage)=0.7629 | 225.0s
+  Epoch 13/15 | train_loss=0.2966 | dev_loss=4.9363 | dev_avg_F1=0.8122 | dev_target_F1(human+damage)=0.7481 | 225.3s
+  Epoch 14/15 | train_loss=0.2825 | dev_loss=4.8962 | dev_avg_F1=0.8253 | dev_target_F1(human+damage)=0.7737 | 225.4s
+  Epoch 15/15 | train_loss=0.2742 | dev_loss=5.0033 | dev_avg_F1=0.8192 | dev_target_F1(human+damage)=0.7646 | 224.7s
+  ✅ Saved checkpoint -> results/checkpoints/b3_erem_uasg.pt
+  ✅ B3_EREM_UASG test-set weighted-F1 by task:
+      event   : 0.9749
+      info    : 0.8259
+      human   : 0.6736
+      damage  : 0.8706
+      verif   : 0.7444
+  🧹 Memory cleared after B3_EREM_UASG.
+
+==============================================================================
+  TRAINING INDEPENDENT BASELINE: B4_EREM_ConventionalAttention
+==============================================================================
+  Train: 14,465  Dev: 1,808  Test: 1,809  (same split as Notebook 1)
+  Parameters: 305,133,216 total | 305,133,216 trainable
+  Epoch 01/15 | train_loss=2.8265 | dev_loss=5.4113 | dev_avg_F1=0.6937 | dev_target_F1(human+damage)=0.6220 | 233.1s
+  Epoch 02/15 | train_loss=0.6914 | dev_loss=6.2046 | dev_avg_F1=0.7159 | dev_target_F1(human+damage)=0.6522 | 232.2s
+  Epoch 03/15 | train_loss=0.5784 | dev_loss=5.8387 | dev_avg_F1=0.7252 | dev_target_F1(human+damage)=0.6632 | 232.4s
+  Epoch 04/15 | train_loss=0.5376 | dev_loss=5.4625 | dev_avg_F1=0.7592 | dev_target_F1(human+damage)=0.7182 | 232.2s
+  Epoch 05/15 | train_loss=0.5043 | dev_loss=5.8487 | dev_avg_F1=0.7611 | dev_target_F1(human+damage)=0.7243 | 232.4s
+  Epoch 06/15 | train_loss=0.4577 | dev_loss=5.7243 | dev_avg_F1=0.7837 | dev_target_F1(human+damage)=0.7286 | 232.2s
+  Epoch 07/15 | train_loss=0.4399 | dev_loss=6.2854 | dev_avg_F1=0.7613 | dev_target_F1(human+damage)=0.7246 | 232.0s
+  Epoch 08/15 | train_loss=0.4181 | dev_loss=5.6006 | dev_avg_F1=0.7958 | dev_target_F1(human+damage)=0.7408 | 232.2s
+  Epoch 09/15 | train_loss=0.3888 | dev_loss=5.2941 | dev_avg_F1=0.7798 | dev_target_F1(human+damage)=0.7297 | 232.2s
+  Epoch 10/15 | train_loss=0.3542 | dev_loss=5.5649 | dev_avg_F1=0.7825 | dev_target_F1(human+damage)=0.7374 | 231.6s
+  Epoch 11/15 | train_loss=0.3643 | dev_loss=5.9682 | dev_avg_F1=0.7804 | dev_target_F1(human+damage)=0.7228 | 231.9s
+  Epoch 12/15 | train_loss=0.3612 | dev_loss=5.3705 | dev_avg_F1=0.8063 | dev_target_F1(human+damage)=0.7543 | 231.8s
+  Epoch 13/15 | train_loss=0.3217 | dev_loss=6.0341 | dev_avg_F1=0.7816 | dev_target_F1(human+damage)=0.7391 | 231.2s
+  Epoch 14/15 | train_loss=0.3295 | dev_loss=5.5832 | dev_avg_F1=0.8021 | dev_target_F1(human+damage)=0.7506 | 231.3s
+  Epoch 15/15 | train_loss=0.3040 | dev_loss=5.9397 | dev_avg_F1=0.8009 | dev_target_F1(human+damage)=0.7430 | 231.1s
+  ✅ Saved checkpoint -> results/checkpoints/b4_erem_conventional_attention.pt
+  ✅ B4_EREM_ConventionalAttention test-set weighted-F1 by task:
+      event   : 0.9267
+      info    : 0.8089
+      human   : 0.6521
+      damage  : 0.8618
+      verif   : 0.7317
+  🧹 Memory cleared after B4_EREM_ConventionalAttention.
+
+==============================================================================
+  BASELINE TRAINING COMPLETE -- STATUS SUMMARY
+==============================================================================
+  B0_Conventional_Fusion              : SUCCESS
+  B1_Vanilla_EDL                      : SUCCESS
+  B2_EDL_UASG                         : SUCCESS
+  B3_EREM_UASG                        : SUCCESS
+  B4_EREM_ConventionalAttention       : SUCCESS

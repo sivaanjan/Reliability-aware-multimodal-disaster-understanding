@@ -1,0 +1,136 @@
+🚀 Starting training…
+   Epochs: 45  |  Batch: 32  |  Device: cuda
+────────────────────────────────────────────────────────────────────────────────
+🧊 Encoders frozen for the first 2 epoch(s) (heads/fusion only).
+Epoch 01/45 ⭐ | Loss: 13.1353/11.6923 | wF1(4-avg): 0.4564/0.3873 | wF1(target=human+damage): 0.2503 | Best-target: 0.2503 | 232s
+  Per-task val wF1 → event:0.3747  info:0.6740  human:0.0215  damage:0.4791
+  Head losses → event:1.449  info:0.643  human:1.378  damage:0.892  verif:0.217  uncert:-0.237
+Epoch 02/45 ⭐ | Loss: 11.3824/11.1083 | wF1(4-avg): 0.5942/0.5482 | wF1(target=human+damage): 0.3614 | Best-target: 0.3614 | 233s
+  Per-task val wF1 → event:0.7525  info:0.7175  human:0.0641  damage:0.6586
+  Head losses → event:1.052  info:0.586  human:1.128  damage:0.661  verif:0.130  uncert:-0.182
+🔥 Unfreezing DeBERTa-v3-base + CLIP ViT-B/32 at epoch 3 (resuming normal LLRD fine-tuning).
+Epoch 03/45 ⭐ | Loss: 10.5740/10.6730 | wF1(4-avg): 0.6644/0.5733 | wF1(target=human+damage): 0.4281 | Best-target: 0.4281 | 310s
+  Per-task val wF1 → event:0.7096  info:0.7274  human:0.1214  damage:0.7348
+  Head losses → event:0.949  info:0.570  human:1.007  damage:0.562  verif:0.121  uncert:-0.292
+Epoch 04/45 ⭐ | Loss: 9.6254/9.9903 | wF1(4-avg): 0.7207/0.6486 | wF1(target=human+damage): 0.5462 | Best-target: 0.5462 | 312s
+  Per-task val wF1 → event:0.7489  info:0.7530  human:0.3322  damage:0.7602
+  Head losses → event:0.862  info:0.551  human:0.846  damage:0.457  verif:0.113  uncert:-0.329
+Epoch 05/45    | Loss: 8.4045/9.1020 | wF1(4-avg): 0.7835/0.6795 | wF1(target=human+damage): 0.5396 | Best-target: 0.5462 | 309s
+  Per-task val wF1 → event:0.8317  info:0.8072  human:0.3292  damage:0.7500
+  Head losses → event:0.834  info:0.520  human:0.572  damage:0.359  verif:0.100  uncert:-0.318
+Epoch 06/45 ⭐ | Loss: 6.8979/7.7963 | wF1(4-avg): 0.8419/0.7524 | wF1(target=human+damage): 0.6343 | Best-target: 0.6343 | 311s
+  Per-task val wF1 → event:0.9387  info:0.8023  human:0.4720  damage:0.7965
+  Head losses → event:0.798  info:0.480  human:0.397  damage:0.279  verif:0.086  uncert:-0.329
+Epoch 07/45 ⭐ | Loss: 5.4924/7.0974 | wF1(4-avg): 0.8882/0.7636 | wF1(target=human+damage): 0.6592 | Best-target: 0.6592 | 311s
+  Per-task val wF1 → event:0.9041  info:0.8317  human:0.5122  damage:0.8063
+  Head losses → event:0.768  info:0.441  human:0.293  damage:0.225  verif:0.073  uncert:-0.381
+Epoch 08/45 ⭐ | Loss: 4.4731/6.6206 | wF1(4-avg): 0.9130/0.7850 | wF1(target=human+damage): 0.6850 | Best-target: 0.6850 | 311s
+  Per-task val wF1 → event:0.9362  info:0.8338  human:0.5785  damage:0.7915
+  Head losses → event:0.745  info:0.424  human:0.245  damage:0.190  verif:0.064  uncert:-0.388
+Epoch 09/45 ⭐ | Loss: 3.6739/6.3321 | wF1(4-avg): 0.9292/0.7986 | wF1(target=human+damage): 0.7007 | Best-target: 0.7007 | 312s
+  Per-task val wF1 → event:0.9491  info:0.8440  human:0.5944  damage:0.8069
+  Head losses → event:0.752  info:0.415  human:0.202  damage:0.163  verif:0.058  uncert:-0.339
+Epoch 10/45    | Loss: 2.9630/6.3543 | wF1(4-avg): 0.9434/0.7886 | wF1(target=human+damage): 0.6898 | Best-target: 0.7007 | 309s
+  Per-task val wF1 → event:0.9375  info:0.8371  human:0.5693  damage:0.8103
+  Head losses → event:0.752  info:0.401  human:0.177  damage:0.143  verif:0.051  uncert:-0.334
+Epoch 11/45 ⭐ | Loss: 2.4000/5.7994 | wF1(4-avg): 0.9499/0.8255 | wF1(target=human+damage): 0.7409 | Best-target: 0.7409 | 311s
+  Per-task val wF1 → event:0.9726  info:0.8477  human:0.6551  damage:0.8267
+  Head losses → event:0.741  info:0.402  human:0.163  damage:0.125  verif:0.052  uncert:-0.354
+Epoch 12/45 ⭐ | Loss: 1.8763/5.6543 | wF1(4-avg): 0.9562/0.8300 | wF1(target=human+damage): 0.7538 | Best-target: 0.7538 | 310s
+  Per-task val wF1 → event:0.9653  info:0.8470  human:0.6676  damage:0.8400
+  Head losses → event:0.749  info:0.391  human:0.147  damage:0.118  verif:0.043  uncert:-0.370
+Epoch 13/45    | Loss: 1.4279/5.6842 | wF1(4-avg): 0.9623/0.8248 | wF1(target=human+damage): 0.7447 | Best-target: 0.7538 | 307s
+  Per-task val wF1 → event:0.9602  info:0.8498  human:0.6496  damage:0.8398
+  Head losses → event:0.744  info:0.388  human:0.136  damage:0.110  verif:0.043  uncert:-0.384
+Epoch 14/45 ⭐ | Loss: 0.9743/5.2834 | wF1(4-avg): 0.9645/0.8345 | wF1(target=human+damage): 0.7582 | Best-target: 0.7582 | 311s
+  Per-task val wF1 → event:0.9693  info:0.8522  human:0.6783  damage:0.8381
+  Head losses → event:0.727  info:0.386  human:0.129  damage:0.108  verif:0.038  uncert:-0.373
+Epoch 15/45 ⭐ | Loss: 0.6104/5.4659 | wF1(4-avg): 0.9678/0.8366 | wF1(target=human+damage): 0.7626 | Best-target: 0.7626 | 312s
+  Per-task val wF1 → event:0.9757  info:0.8457  human:0.6746  damage:0.8505
+  Head losses → event:0.737  info:0.385  human:0.121  damage:0.102  verif:0.038  uncert:-0.379
+Epoch 16/45    | Loss: 0.2422/5.6407 | wF1(4-avg): 0.9718/0.8295 | wF1(target=human+damage): 0.7471 | Best-target: 0.7626 | 310s
+  Per-task val wF1 → event:0.9695  info:0.8544  human:0.6517  damage:0.8425
+  Head losses → event:0.739  info:0.379  human:0.116  damage:0.094  verif:0.035  uncert:-0.386
+Epoch 17/45    | Loss: -0.1937/5.6375 | wF1(4-avg): 0.9715/0.8292 | wF1(target=human+damage): 0.7609 | Best-target: 0.7626 | 309s
+  Per-task val wF1 → event:0.9447  info:0.8502  human:0.6691  damage:0.8528
+  Head losses → event:0.719  info:0.384  human:0.113  damage:0.086  verif:0.034  uncert:-0.378
+Epoch 18/45    | Loss: -0.4918/5.6668 | wF1(4-avg): 0.9763/0.8353 | wF1(target=human+damage): 0.7622 | Best-target: 0.7626 | 309s
+  Per-task val wF1 → event:0.9718  info:0.8449  human:0.6844  damage:0.8399
+  Head losses → event:0.731  info:0.376  human:0.105  damage:0.086  verif:0.032  uncert:-0.389
+Epoch 19/45    | Loss: -0.8224/5.7903 | wF1(4-avg): 0.9773/0.8367 | wF1(target=human+damage): 0.7625 | Best-target: 0.7626 | 309s
+  Per-task val wF1 → event:0.9689  info:0.8528  human:0.6867  damage:0.8384
+  Head losses → event:0.734  info:0.370  human:0.101  damage:0.083  verif:0.030  uncert:-0.387
+Epoch 20/45    | Loss: -1.1187/5.9964 | wF1(4-avg): 0.9783/0.8300 | wF1(target=human+damage): 0.7481 | Best-target: 0.7626 | 308s
+  Per-task val wF1 → event:0.9740  info:0.8499  human:0.6505  damage:0.8457
+  Head losses → event:0.722  info:0.376  human:0.103  damage:0.079  verif:0.030  uncert:-0.404
+Epoch 21/45 ⭐ | Loss: -1.4143/5.9689 | wF1(4-avg): 0.9802/0.8379 | wF1(target=human+damage): 0.7663 | Best-target: 0.7663 | 310s
+  Per-task val wF1 → event:0.9715  info:0.8477  human:0.6887  damage:0.8439
+  Head losses → event:0.726  info:0.369  human:0.095  damage:0.079  verif:0.028  uncert:-0.386
+Epoch 22/45 ⭐ | Loss: -1.7517/6.2874 | wF1(4-avg): 0.9815/0.8377 | wF1(target=human+damage): 0.7674 | Best-target: 0.7674 | 311s
+  Per-task val wF1 → event:0.9679  info:0.8480  human:0.6823  damage:0.8525
+  Head losses → event:0.722  info:0.368  human:0.090  damage:0.076  verif:0.027  uncert:-0.370
+Epoch 23/45    | Loss: -1.9404/6.2980 | wF1(4-avg): 0.9827/0.8361 | wF1(target=human+damage): 0.7664 | Best-target: 0.7674 | 309s
+  Per-task val wF1 → event:0.9546  info:0.8571  human:0.6885  damage:0.8443
+  Head losses → event:0.729  info:0.368  human:0.091  damage:0.073  verif:0.026  uncert:-0.382
+Epoch 24/45 ⭐ | Loss: -2.1408/6.2316 | wF1(4-avg): 0.9834/0.8418 | wF1(target=human+damage): 0.7765 | Best-target: 0.7765 | 312s
+  Per-task val wF1 → event:0.9708  info:0.8434  human:0.7033  damage:0.8498
+  Head losses → event:0.727  info:0.366  human:0.089  damage:0.072  verif:0.026  uncert:-0.400
+Epoch 25/45 ⭐ | Loss: -2.3786/6.0845 | wF1(4-avg): 0.9837/0.8499 | wF1(target=human+damage): 0.7867 | Best-target: 0.7867 | 313s
+  Per-task val wF1 → event:0.9797  info:0.8465  human:0.7184  damage:0.8549
+  Head losses → event:0.709  info:0.365  human:0.090  damage:0.070  verif:0.025  uncert:-0.390
+Epoch 26/45    | Loss: -2.6346/6.8861 | wF1(4-avg): 0.9857/0.8357 | wF1(target=human+damage): 0.7737 | Best-target: 0.7867 | 312s
+  Per-task val wF1 → event:0.9432  info:0.8522  human:0.7017  damage:0.8458
+  Head losses → event:0.723  info:0.361  human:0.085  damage:0.069  verif:0.023  uncert:-0.381
+Epoch 27/45    | Loss: -2.7015/6.5563 | wF1(4-avg): 0.9851/0.8462 | wF1(target=human+damage): 0.7750 | Best-target: 0.7867 | 310s
+  Per-task val wF1 → event:0.9822  info:0.8525  human:0.6952  damage:0.8547
+  Head losses → event:0.733  info:0.365  human:0.085  damage:0.067  verif:0.024  uncert:-0.385
+Epoch 28/45    | Loss: -2.9570/7.1527 | wF1(4-avg): 0.9869/0.8393 | wF1(target=human+damage): 0.7659 | Best-target: 0.7867 | 311s
+  Per-task val wF1 → event:0.9765  info:0.8490  human:0.6789  damage:0.8529
+  Head losses → event:0.727  info:0.363  human:0.082  damage:0.066  verif:0.023  uncert:-0.398
+Epoch 29/45    | Loss: -3.0918/6.8727 | wF1(4-avg): 0.9869/0.8493 | wF1(target=human+damage): 0.7849 | Best-target: 0.7867 | 321s
+  Per-task val wF1 → event:0.9749  info:0.8523  human:0.7145  damage:0.8552
+  Head losses → event:0.714  info:0.360  human:0.083  damage:0.065  verif:0.022  uncert:-0.407
+Epoch 30/45    | Loss: -3.2581/7.1384 | wF1(4-avg): 0.9876/0.8487 | wF1(target=human+damage): 0.7863 | Best-target: 0.7867 | 333s
+  Per-task val wF1 → event:0.9739  info:0.8483  human:0.7215  damage:0.8511
+  Head losses → event:0.726  info:0.361  human:0.080  damage:0.066  verif:0.020  uncert:-0.405
+Epoch 31/45 ⭐ | Loss: -3.3659/7.0610 | wF1(4-avg): 0.9883/0.8536 | wF1(target=human+damage): 0.7934 | Best-target: 0.7934 | 344s
+  Per-task val wF1 → event:0.9765  info:0.8511  human:0.7301  damage:0.8566
+  Head losses → event:0.718  info:0.361  human:0.078  damage:0.063  verif:0.021  uncert:-0.388
+Epoch 32/45    | Loss: -3.4868/7.3328 | wF1(4-avg): 0.9889/0.8470 | wF1(target=human+damage): 0.7866 | Best-target: 0.7934 | 340s
+  Per-task val wF1 → event:0.9692  info:0.8455  human:0.7151  damage:0.8581
+  Head losses → event:0.719  info:0.356  human:0.076  damage:0.063  verif:0.021  uncert:-0.384
+Epoch 33/45    | Loss: -3.5853/7.2507 | wF1(4-avg): 0.9891/0.8452 | wF1(target=human+damage): 0.7812 | Best-target: 0.7934 | 327s
+  Per-task val wF1 → event:0.9749  info:0.8436  human:0.7078  damage:0.8545
+  Head losses → event:0.714  info:0.361  human:0.076  damage:0.061  verif:0.020  uncert:-0.372
+Epoch 34/45    | Loss: -3.6758/7.4379 | wF1(4-avg): 0.9899/0.8484 | wF1(target=human+damage): 0.7802 | Best-target: 0.7934 | 316s
+  Per-task val wF1 → event:0.9787  info:0.8544  human:0.7047  damage:0.8557
+  Head losses → event:0.717  info:0.358  human:0.074  damage:0.060  verif:0.019  uncert:-0.366
+Epoch 35/45    | Loss: -3.7447/7.5490 | wF1(4-avg): 0.9905/0.8404 | wF1(target=human+damage): 0.7770 | Best-target: 0.7934 | 314s
+  Per-task val wF1 → event:0.9733  info:0.8342  human:0.6994  damage:0.8546
+  Head losses → event:0.725  info:0.357  human:0.073  damage:0.060  verif:0.018  uncert:-0.376
+Epoch 36/45    | Loss: -3.8166/7.7016 | wF1(4-avg): 0.9907/0.8527 | wF1(target=human+damage): 0.7880 | Best-target: 0.7934 | 314s
+  Per-task val wF1 → event:0.9782  info:0.8568  human:0.7207  damage:0.8552
+  Head losses → event:0.720  info:0.355  human:0.072  damage:0.059  verif:0.017  uncert:-0.377
+Epoch 37/45    | Loss: -3.8777/7.6086 | wF1(4-avg): 0.9910/0.8535 | wF1(target=human+damage): 0.7917 | Best-target: 0.7934 | 322s
+  Per-task val wF1 → event:0.9808  info:0.8497  human:0.7264  damage:0.8570
+  Head losses → event:0.724  info:0.355  human:0.072  damage:0.058  verif:0.016  uncert:-0.381
+Epoch 38/45    | Loss: -3.9287/7.5922 | wF1(4-avg): 0.9919/0.8514 | wF1(target=human+damage): 0.7891 | Best-target: 0.7934 | 317s
+  Per-task val wF1 → event:0.9793  info:0.8482  human:0.7251  damage:0.8532
+  Head losses → event:0.721  info:0.352  human:0.070  damage:0.058  verif:0.016  uncert:-0.388
+Epoch 39/45    | Loss: -3.9533/7.7411 | wF1(4-avg): 0.9922/0.8518 | wF1(target=human+damage): 0.7862 | Best-target: 0.7934 | 317s
+  Per-task val wF1 → event:0.9792  info:0.8556  human:0.7172  damage:0.8553
+  Head losses → event:0.723  info:0.353  human:0.070  damage:0.057  verif:0.017  uncert:-0.399
+Epoch 40/45    | Loss: -3.9472/7.7099 | wF1(4-avg): 0.9915/0.8516 | wF1(target=human+damage): 0.7864 | Best-target: 0.7934 | 313s
+  Per-task val wF1 → event:0.9797  info:0.8540  human:0.7206  damage:0.8521
+  Head losses → event:0.727  info:0.354  human:0.071  damage:0.058  verif:0.017  uncert:-0.408
+Epoch 41/45    | Loss: -3.9894/7.7243 | wF1(4-avg): 0.9919/0.8498 | wF1(target=human+damage): 0.7818 | Best-target: 0.7934 | 312s
+  Per-task val wF1 → event:0.9813  info:0.8544  human:0.7122  damage:0.8514
+  Head losses → event:0.723  info:0.354  human:0.072  damage:0.057  verif:0.017  uncert:-0.406
+
+⏹  Early stopping triggered (no improvement for 10 epochs).
+
+✅ Training complete.  Best target wF1 (human+damage avg): 0.7934  |  Best 4-task avg wF1: 0.8536
+
+🔀 Averaging top-3 checkpoints (SWA-style) ...
+   SWA dev target wF1: 0.7905  (single-best target was 0.7934)
+   ↩️  Single best checkpoint remains superior — reloading it.
